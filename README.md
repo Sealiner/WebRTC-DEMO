@@ -1,5 +1,4 @@
-使用方法
-============
+#使用方法
 1. 使用此应用需要安装Node。
 2. 安装完后，在命令行进入文件根目录后运行npm install安装所需依赖。
 3. 打开server.js文件，这只监听端口port。
@@ -9,8 +8,7 @@
 
 ----
 
-程序简介
-============
+#程序简介
 此应用只是个简单应用webrtc的原型，所以在功能方面肯定有很多细节上的bug或不完善的地方。
 
 此应用基于WEBRTC（WEB Real-Time-Communication）技术，目前实现的功能有：
@@ -30,8 +28,7 @@ w3c标准文档请参见：http://www.w3.org/TR/webrtc/
 
 -----
 
-程序结构
-=========
+#程序结构
 本程序使用seajs进行CMD模块化管理。主要有如下几个核心模块：
 1. main：主模块
 2. websocketConnector：websocket模块
