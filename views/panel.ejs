@@ -1,0 +1,68 @@
+<%- include header %>
+
+<div id="main_page" class="container on">
+	<header><div><%= userName %></div></header>
+	<section class="panel_block">
+		<div class="box1">
+			<div>
+				<label>在线用户</label>
+				<ul id="userList">
+				</ul>
+			</div>
+			<div>
+				<label>收到文件</label>
+				<ul id="fileList">
+				</ul>
+			</div>
+		</div>
+		<div class="box2">
+			<div class="video_panel">
+				<video id="localVideo" autoplay=true class="local_video"></video>
+				<video id="remoteVideo" autoplay=true class="remote_video"></video>
+			</div>
+			<div class="control_panel">
+				<input type="button" id="startVideo" class="btn" value="打开摄像头">
+				<input type="button" id="callVideo" class="btn" value="视频拨号">
+				<input type="button" id="stopVideo" class="btn" value="挂断视频">
+				<br>
+				<input type="file" id="fileElt" class="fileElt"></input>
+				<input type="button" id="sendFile" class="btn" value="传送文件">
+				<br>
+				<input type="button" id="joinGame" class="btn" value="进入游戏">
+				<label>请先选择一个用户（只能一个），再点击进入游戏</label>
+			</div>
+		</div>
+	</section>
+	<div class="msg_block">
+		<div class="show_msg"></div>
+		<div class="send_msg">
+			<textarea id="message" class="write_msg"></textarea>
+			<input type="button" id="sendMsg" class="btn" value="发送">
+		</div>
+	</div>
+</div>
+
+<div id="game_page" class="container">
+	<section class="game_block">
+		<canvas id="gameCanvas" width="500" height="500"></canvas>
+		<div class="game_info">
+			<div class="opponent_info">
+				<p class="player_name">alex</p>
+				<p class="player_score">10</p>	
+			</div>
+			<div class="my_info">
+				<p class="player_score">5</p>
+				<p class="player_name">ulspeed</p>
+			</div>
+		</div>
+		<div class="control_panel">
+			<label id="game_status">O(∩_∩)O欢迎进入游戏O(∩_∩)O</label>
+			<br>
+			<input type="button" id="exitGame" class="btn" value="退出游戏">
+			<br>
+			<label>游戏说明：左右键控制</label>
+		</div>
+	</section>
+</div>
+
+<%- include footer %>

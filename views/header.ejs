@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= title %></title>
+	<meta charset='UTF-8'>
+	<meta content="基于Node的WebRTC应用" name="description">
+	<meta content="WebRTC Node express websocket" name="keywords">
+	<meta content="Mingdan XU" name="author">
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/iDialog.css" rel="stylesheet" />
+	<script>
+		var APP = {
+			INFO: {
+				name: "<%= userName %>",
+				host: '172.16.0.186',
+				port: '3001'
+			},
+			STUN: {
+				"iceServers": [{"url": "stun:stun.l.google.com:19302"}] //这里其实并没有用到iceServer, 只是为了使初始化参数合法化。
+			},
+			JOKERS: []
+		};
+		
+	</script>
+	<script src="lib/helper.js"></script>
+	<script src="lib/sea.js"></script>
+	<script>
+	(function(){
+		seajs.config({
+			base: "",
+			map: [
+				[".js", ".js?v=20150113"]
+			]
+		});
+
+		seajs.use("js/main");
+	})();
+	</script>
+</head>
+<body>

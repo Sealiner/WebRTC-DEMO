@@ -1,0 +1,17 @@
+<%- include login_header %>
+
+<div id="login_page" class="container on">
+	<header><div>O(∩_∩)O WebRTC APP O(∩_∩)O</div></header>
+	<section class="login_block">
+		<div>
+			<form action="/panel" method="post">
+				<label for="login">Nickname：</label>
+				<input type="text" id="login" name="login_username" />
+				<input type="submit" value="Login" class="btn" />
+			</form>
+		</div>
+	</section>
+	<footer><div>微盟weimob</div></footer>
+</div>
+
+<%- include footer %>
