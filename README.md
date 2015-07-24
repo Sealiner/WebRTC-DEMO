@@ -12,6 +12,7 @@
 此应用只是个简单应用webrtc的原型，所以在功能方面肯定有很多细节上的bug或不完善的地方。
 
 此应用基于WEBRTC（WEB Real-Time-Communication）技术，目前实现的功能有：
+
 1.	视频会话
 2.	小型文件传输（貌似7MB左右的文件就无法成功传输了，有待研究）
 3.	聊天
@@ -30,6 +31,7 @@ w3c标准文档请参见：http://www.w3.org/TR/webrtc/
 
 #程序结构
 本程序使用seajs进行CMD模块化管理。主要有如下几个核心模块：
+
 1. main：主模块
 2. websocketConnector：websocket模块
 3. magicBox：即RTCPeerConnection。
@@ -39,6 +41,7 @@ w3c标准文档请参见：http://www.w3.org/TR/webrtc/
 7. cubeSlam：游戏模块，可在此模块修改来改变游戏的一些规则。
 
 另外的一些辅助文件有：
+
 1. sea.js：CMD模块管理
 2. cutelog.js：这个是用来在控制台更美观地输出Log的工具，因为此程序并未使用任何适用于node的log模块，所以只可通过控制台来查看程序的执行过程，以便追踪调试。
 3. zepto.js：类似JQuery的框架，由于小在移动端较为流行。
